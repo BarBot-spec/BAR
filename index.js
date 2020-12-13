@@ -4,11 +4,11 @@
 * jangan ubah semuanya kecuali nama bot instagram yt itu ajah yg lain jangan!!!
 * hargai pembuat skrip woy!!!
 */
-const XPTN = '👾XP-TN👾'; // Nama Bot Whatsapp
-const instagram = 'https://instagram.com/mragung23'; // Nama Instagramlu cok
-const nomer = 'https://Wa.me/+6289655478810'; // Nomor whatsapplu cok
+const XPTN = 'BARXNL'; // Nama Bot Whatsapp
+const instagram = 'https://instagram.com/barxnl'; // Nama Instagramlu cok
+const nomer = 'https://Wa.me/+6282198571732'; // Nomor whatsapplu cok
 const aktif = 'Tergantung jaringan'; // Kapan bot lu aktif
-const groupwa = 'https://chat.whatsapp.com/GDdd0I3WlF5LnMVifmS7rN'; // OFFICIAL GRUP LU 1
+const groupwa = 'https://instagram.com/barxnl'; // OFFICIAL GRUP LU 1
 const youtube = 'https://www.youtube.com/channel/UCMiQsqzWvj-zKxNlFlG_Wiw'; // OFFICIAL GRUP LU 2
 //
 const qrcode = require("qrcode-terminal");
@@ -35,7 +35,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:XP Ganss\n' // full name
             + 'ORG:Owner XPTN Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6289655478810:+62 896-5547-8810\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=6282198571732:+62 821-9857-1732\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 //
 const
@@ -380,7 +380,7 @@ var gh = text.split(".quotemaker ")[1];
     })
 }
 if (text.includes('.nulis2')){
-  var teks = text.replace(/%nulis2 /, '')
+  var teks = text.replace(/.nulis2 /, '')
     axios.get(`https://mhankbarbars.herokuapp.com/nulis?text=${teks}&apiKey=N2Ws9kp3KTDYtry5Jjyz`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -1299,7 +1299,7 @@ else if (text == '.foto'){
 conn.sendMessage(id, 'kirim .foto cewek/cowok\n\nContoh: .foto cewek' ,MessageType.text);
 }
 else if (text == '.help'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾XP-TNNBOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/@mragung23' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *BARXNL* , Follow Instagram Mimin Yah😻 : https://instagram.com/barxnl' ,MessageType.text);
 }
 else if (text == '.tools1'){
 conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾XP-TNNBOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/@mragung23' ,MessageType.text);
