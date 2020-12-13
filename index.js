@@ -33,8 +33,8 @@ const xp6 = require("./lib/xp6.js");
 const readTextInImage = require('./lib/ocr')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:XP Ganss\n' // full name
-            + 'ORG:Owner XPTN Bot;\n' // the organization of the contact
+            + 'FN:Akbar Gans\n' // full name
+            + 'ORG:Owner BARXNL-BOT;\n' // the organization of the contact
             + 'TEL;type=CELL;type=VOICE;waid=6282198571732:+62 821-9857-1732\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 //
