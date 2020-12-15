@@ -282,7 +282,7 @@ conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.tex
 
 // Fitur
 
-if (text.includes('.nulis')){
+if (text.includes('.nulis2')){
   var teks = text.replace(/.nulis /, '')
     axios.get('https://bangandre.herokuapp.com/nulis?teks='+teks)
     .then((res) => {
@@ -379,8 +379,8 @@ var gh = text.split(".quotemaker ")[1];
         })
     })
 }
-if (text.includes('.nulis2')){
-  var teks = text.replace(/.nulis2 /, '')
+if (text.includes('.nulis')){
+  var teks = text.replace(/.nulis /, '')
     axios.get(`https://mhankbarbars.herokuapp.com/nulis?text=${teks}&apiKey=N2Ws9kp3KTDYtry5Jjyz`).then((res) => {
       imageToBase64(res.data.result)
         .then(
@@ -644,7 +644,7 @@ conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
-if (text.includes(".quotes1")){
+if (text.includes(".quotes")){
 const teks = text.replace(/.quotes1 /, "")
 axios.get(`https://arugaz.herokuapp.com/api/randomquotes`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
@@ -1373,7 +1373,7 @@ const get = require('got')
     console.log(body[0]['name'])
     conn.sendMessage(id,`🔎DATA WABAH COVID-19 TERBARU DI INDONESIA🔍\n\n📈Positif ==> ${positif} \n📉Sembuh ==> ${sembuh} \n📋Meninggal ==> ${meninggal}\n🗒️Dirawat ==> ${dirawat}`, MessageType.text);
 }
-   if (text.includes(".quotes"))
+   if (text.includes(".katabijak"))
    {
       var url = 'https://jagokata.com/kata-bijak/acak.html'
       axios.get(url)
