@@ -7,7 +7,7 @@ BOT WHATSAPP TERMUX ONLY BY BARXNL
 <a href="#"><img title="BARXNL" src="https://img.shields.io/badge/XP-TN-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/XP-TN"><img title="BARXNL" src="https://img.shields.io/badge/AUTHOR-BARXNL ID-orange.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/BARXNL"><img title="BARXNL" src="https://img.shields.io/badge/AUTHOR-BARXNL ID-orange.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
 <a href="https://www.codefactor.io/repository/github/XP-TN/XP-TNNBOT"><img title="Rating" src="https://www.codefactor.io/repository/github/XP-TN/XP-TNNBOT/badge/master"></a>
