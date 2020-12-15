@@ -10,7 +10,7 @@ BOT WHATSAPP TERMUX ONLY BY BARXNL
 <a href="https://github.com/BARXNL"><img title="BARXNL" src="https://img.shields.io/badge/AUTHOR-BARXNL ID-orange.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-<a href="https://www.codefactor.io/repository/github/XP-TN/XP-TNNBOT"><img title="Rating" src="https://www.codefactor.io/repository/github/XP-TN/XP-TNNBOT/badge/master"></a>
+<a href="https://www.codefactor.io/repository/github/BarBot-spec/BAR"><img title="Rating" src="https://www.codefactor.io/repository/github/BarBot-spec/BAR/badge/master"></a>
 </p>
 <p align="center">
 <a href="https://github.com/BarBot-spec/BAR/followers"><img title="Followers" src="https://img.shields.io/github/followers/Barbot-spec?color=blue&style=flat-square"></a>
@@ -51,7 +51,7 @@ Script ini di modifikasi sama saya sendiri BARXNL
 > jika error lapor ke Pembuat script chat wa link ada di github 
 ```
 ### Cara Installnya
-Script ini di modifikasi sama saya sendiri XP-TN.
+Script ini di modifikasi sama saya sendiri BARXNL.
 ```bash
 kalo lu belum punya apk termux, download di playstore
 > masuk ke apk termux lalu ketik dibawah ini!
