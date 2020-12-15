@@ -7,7 +7,7 @@ BOT WHATSAPP TERMUX ONLY BY BARXNL
 <a href="#"><img title="BARXNL" src="https://img.shields.io/badge/XP-TN-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/XP-TN"><img title="XP-TNNBOT" src="https://img.shields.io/badge/AUTHOR-XP-TN ID-orange.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/XP-TN"><img title="BARXNL" src="https://img.shields.io/badge/AUTHOR-BARXNL ID-orange.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
 <a href="https://www.codefactor.io/repository/github/XP-TN/XP-TNNBOT"><img title="Rating" src="https://www.codefactor.io/repository/github/XP-TN/XP-TNNBOT/badge/master"></a>
@@ -58,8 +58,8 @@ kalo lu belum punya apk termux, download di playstore
 > termux-setup-storage
 > pkg install git && pkg install tesseract && pkg install wget && pkg install ffmpeg && pkg install nodejs
 > apt update && apt upgrade
-> git clone https://github.com/XP-TN/XP-TNNBOT
-> cd XP-TNNBOT
+> git clone https://github.com/BarBot-spec/BAR
+> cd BAR
 > npm i -g cwebp && npm i node-tesseract-ocr && npm i -g ytdl && npm i  && npm i got && node index js
 > Tinggal scan kode qr yeee...done
 ```
