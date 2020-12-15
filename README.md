@@ -1,7 +1,7 @@
 # BARXNL-BOT
 BOT WHATSAPP TERMUX ONLY BY BARXNL
 <p align="center">
-<img src = "https://avatars3.githubusercontent.com/u/49530313?s=460&u=086c7b0d17c5b8e906200d810e88587f5c98e349&v=4" width="320">
+<img src = "https://avatars2.githubusercontent.com/u/49530313?s=460&u=086c7b0d17c5b8e906200d810e88587f5c98e349&v=4" width="320">
 </p>
 <p align="center">
 <a href="#"><img title="BARXNL" src="https://img.shields.io/hhh/BARXNL-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
