@@ -1,6 +1,6 @@
 /*
 * "Jangan modal nama doang bro!!!"
-* (Scriptnya XP-TN)
+* (Scriptnya BARXNL)
 * jangan ubah semuanya kecuali nama bot instagram yt itu ajah yg lain jangan!!!
 * hargai pembuat skrip woy!!!
 */
@@ -156,8 +156,8 @@ conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.
 else if (text == 'Asu'){
 conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
 }
-else if (text == '.owner'){
-conn.sendMessage(id, 'Owner XP-TN wa.me/+6282198571732' ,MessageType.text);
+else if (text == '.creator'){
+conn.sendMessage(id, 'Owner BARXNL wa.me/+6282198571732' ,MessageType.text);
 }
 else if (text == 'Akbar'){
 conn.sendMessage(id, 'Akbar lagi sibuk, Mending kau rakit Pc:D' ,MessageType.text);
@@ -512,9 +512,9 @@ const teks = text.replace(/.setdesc /, "")
 conn.sendMessage(id, 'Succes Change Description Group' ,MessageType.text, { quoted: m } );
 
 }
-if (text.includes('.creator')){
+if (text.includes('.owner')){
 conn.sendMessage(id, {displayname: "Jeff", vcard: vcard}, MessageType.contact)
-conn.sendMessage(id, 'Ingin donasi untuk masukin Bot ke group?, chat Owner :D', MessageType.text)
+conn.sendMessage(id, 'Ingin masukin Bot ke group?, chat Owner :D', MessageType.text)
 }
 if (text.includes(".bitly")){
 const teks = text.replace(/.bitly /, "")
