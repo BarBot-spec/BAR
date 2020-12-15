@@ -1,10 +1,10 @@
-# 👾XP-TNBOT👾
-BOT WHATSAPP TERMUX ONLY BY XP-TN
+# BARXNL-BOT
+BOT WHATSAPP TERMUX ONLY BY BARXNL
 <p align="center">
 <img src = "https://avatars3.githubusercontent.com/u/49530313?s=460&u=086c7b0d17c5b8e906200d810e88587f5c98e349&v=4" width="320">
 </p>
 <p align="center">
-<a href="#"><img title="👾XP-TN👾" src="https://img.shields.io/badge/XP-TN-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="BARXNL" src="https://img.shields.io/badge/XP-TN-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href="https://github.com/XP-TN"><img title="XP-TNNBOT" src="https://img.shields.io/badge/AUTHOR-XP-TN ID-orange.svg?style=for-the-badge&logo=github"></a>
@@ -13,10 +13,10 @@ BOT WHATSAPP TERMUX ONLY BY XP-TN
 <a href="https://www.codefactor.io/repository/github/XP-TN/XP-TNNBOT"><img title="Rating" src="https://www.codefactor.io/repository/github/XP-TN/XP-TNNBOT/badge/master"></a>
 </p>
 <p align="center">
-<a href="https://github.com/XP-TN/XP-TNNBOT/followers"><img title="Followers" src="https://img.shields.io/github/followers/XP-TN?color=blue&style=flat-square"></a>
-<a href="https://github.com/XP-TN/XP-TNNBOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/XP-TN/XP-TNNBOT?color=red&style=flat-square"></a>
-<a href="https://github.com/XP-TN/XP-TNNBOT/network/members"><img title="Forks" src="http://img.shields.io/github/forks/XP-TN/XP-TNNBOT?color=red&style=flat-square"></a>
-<a href="https://github.com/XP-TN/XP-TNNBOT/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/XP-TN/XP-TNNBOT?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/BarBot-spec/BAR/followers"><img title="Followers" src="https://img.shields.io/github/followers/XP-TN?color=blue&style=flat-square"></a>
+<a href="https://github.com/BarBot-spec/BAR/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/XP-TN/XP-TNNBOT?color=red&style=flat-square"></a>
+<a href="https://github.com/BarBot-spec/BAR/network/members"><img title="Forks" src="http://img.shields.io/github/forks/XP-TN/XP-TNNBOT?color=red&style=flat-square"></a>
+<a href="https://github.com/BarBot-spec/BAR/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/XP-TN/XP-TNNBOT?label=Watchers&color=blue&style=flat-square"></a>
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FXP-TN%2FXP-TNNBOT&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Support&edge_flat=false"/></a>
 </p>
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" alt="Mario Game" width="600" />
@@ -44,7 +44,7 @@ Siapin alat dan bahannya.
 ```
 
 ### Informasi Pengguna
-Script ini di modifikasi sama saya sendiri XP-TN
+Script ini di modifikasi sama saya sendiri BARXNL
 ```bash
 > Support My Github😘
 > Jangan Lupa follow github saya🤗
@@ -83,7 +83,7 @@ Github ini dan support😅
 ```
 ## Features
 
-| XP-TNBOT      |                   Feature        |
+|BARXNL-BOT      |                   Feature        |
  :-----------: | :------------------------------: |
 |       ✅       | Sticker Creator                  |
 |       ✅       | Nulis                            |
@@ -121,15 +121,10 @@ Github ini dan support😅
 |                   MORE                           |
 
 ## Note
-BOT INI KHUSUS HP/TERMUX DOANG YAH,JIKA MAU RE-UPLOAD CANTUMKAN NAMA SAYA (XP-TN)
+BOT INI KHUSUS HP/TERMUX DOANG YAH,JIKA MAU RE-UPLOAD CANTUMKAN NAMA SAYA (BARXNL)
 
 ## Sosial Media Admin
-* [`Youtube Admin`](https://www.youtube.com/channel/UCMiQsqzWvj-zKxNlFlG_Wiw)
-* [`Instagram Admin`](https://instagram.com/mragung23)
-* [`WhatsApp Admin `](https://wa.me/+6289655478810)
+* [`Instagram Admin`](https://instagram.com/barxnl)
+* [`WhatsApp Admin `](https://wa.me/+6282198571732)
 
-##THANKS TO MY FRENDS
-* [`caliph71 Github`](https://github.com/Caliph71)
-<p align="center">
-<a href="https://www.appcreator24.com/app1317131"</a>
-</p>
+#THANKS
