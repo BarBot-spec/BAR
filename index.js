@@ -2030,6 +2030,10 @@ else if (text == 'Akbar'){
 let hasil = fs.readFileSync('mp3/' + 'baka' + '.wav')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
+else if (text == 'Ohayo'){
+let hasil = fs.readFileSync('mp3/' + 'hehe' + '.wav')
+ conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
+}
 if (text.includes(".alay")){
 	const alay = text.split(".alay")[1]
 	axios.get(`https://api.terhambar.com/bpk?kata=${alay}`).then ((res) =>
