@@ -2025,7 +2025,7 @@ if (text.includes('.ttp')){
             conn.sendMessage(id, buf, MessageType.image)
         })
     })
-else if (text == 'baka'){
+else if (text == 'Akbar'){
 let hasil = fs.readFileSync('mp3/' + 'baka' + '.wav')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
