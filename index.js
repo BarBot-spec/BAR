@@ -2025,6 +2025,9 @@ if (text.includes('.ttp')){
             conn.sendMessage(id, buf, MessageType.image)
         })
     })
+else if (text == 'baka'){
+let hasil = fs.readFileSync('mp3/' + 'baka' + '.wav')
+ conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
 if (text.includes(".alay")){
 	const alay = text.split(".alay")[1]
