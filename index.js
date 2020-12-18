@@ -2075,6 +2075,8 @@ if (text.includes('bot')) {
  const options = {
        text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]`,
        contextInfo: { mentionedJid: [nomor] }
+ }
+ conn.sendMessage(id, options, MessageType.text, { quoted: m })
 }
 if (text.includes('Bot')) {
  var nomor = m.participant
