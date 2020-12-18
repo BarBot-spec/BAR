@@ -2073,7 +2073,7 @@ let err = fs.readFileSync('mp3/' + 'tariksis' + '.wav')
 if (text.includes('bot')) {
  var nomor = m.participant
  const options = {
-       text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]`,
+       text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]}`,
        contextInfo: { mentionedJid: [nomor] }
  }
  conn.sendMessage(id, options, MessageType.text, { quoted: m })
