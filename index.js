@@ -2056,15 +2056,21 @@ if (text.includes("Tariksis")){
 let err = fs.readFileSync('mp3/' + 'tariksis' + '.wav')
  conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
 }
+if (text.includes('bot')) {
+ var nomor = m.participant
+ const options = {
+       text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]`,
+       contextInfo: { mentionedJid: [nomor] }
+}
 if (text.includes('Bot')) {
  var nomor = m.participant
  const options = {
-       text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]}, Ketik >help untuk menampilkan perintah yaa`,
+       text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]}`,
        contextInfo: { mentionedJid: [nomor] }
  }
  conn.sendMessage(id, options, MessageType.text, { quoted: m })
 }
-if (text.includes("desah")){
+if (text.includes("Desah")){
 let err = fs.readFileSync('mp3/' + 'desah' + '.wav')
  conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
 }
@@ -2080,7 +2086,7 @@ else if (text == 'Ptt'){
 let hasil = fs.readFileSync('mp3/' + 'pttt' + '.pttt')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
-else if (text == 'goblok'){
+else if (text == 'Goblok'){
 let hasil = fs.readFileSync('mp3/' + 'goblok' + '.wav')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
