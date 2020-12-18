@@ -1961,6 +1961,19 @@ axios.get(`https://st4rz.herokuapp.com/api/yta2?url=${teks}`).then((res) => {
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
+if (text.includes('/igstalk')){
+  var teks = text.replace(/.igstalk /, '')
+    axios.get('https://arugaz.herokuapp.com/api/stalk?username='+teks)
+    .then((res) => {
+      imageToBase64(res.data.Profile_pic)
+        .then(
+          (ress) => {
+           let hasil = `User Ditemukan!!\n\n*➸ Nama :* ${res.data.Name}\n*➸ Username :* ${res.data.Username}\n*➸ Followers :* ${res.data.Jumlah_Followers}\n*➸ Mengikuti :* ${res.data.Jumlah_Following}\n*➸ Jumlah Post :* ${res.data.Jumlah_Post}\n*➸ Bio :* ${res.data.Biodata}`;
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, buf, MessageType.image, { caption: hasil, quoted: m })
+        })
+    })
+}
 if (text.includes('.samehadaku')){
   var teks = text.replace(/.samehadaku /, '')
     axios.get(`https://docs-jojo.herokuapp.com/api/samehadaku?q=${teks}`).then((res) => {
