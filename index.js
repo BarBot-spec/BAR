@@ -2039,6 +2039,51 @@ if (text.includes('.ttp')){
         })
     })
 }
+
+else if (text == '.hello1'){
+let hasil = fs.readFileSync('mp3/' + 'PTT' + '.wav')
+ conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
+}
+if (text.includes("Test")){
+let err = fs.readFileSync('mp3/' + 'test' + '.mav')
+ conn.sendMessage(id, err, MessageType.audio, { quoted: m })
+}
+if (text.includes("Salam")){
+let err = fs.readFileSync('mp3/' + 'salam' + '.mp3')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true })
+}
+if (text.includes("Tariksis")){
+let err = fs.readFileSync('mp3/' + 'tariksis' + '.wav')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+}
+if (text.includes('Bot')) {
+ var nomor = m.participant
+ const options = {
+       text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]}, Ketik >help untuk menampilkan perintah yaa`,
+       contextInfo: { mentionedJid: [nomor] }
+ }
+ conn.sendMessage(id, options, MessageType.text, { quoted: m })
+}
+if (text.includes("desah")){
+let err = fs.readFileSync('mp3/' + 'desah' + '.wav')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+}
+if (text.includes("iri")){
+let err = fs.readFileSync('mp3/' + 'iri' + '.mp3')
+ conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
+}
+else if (text == 'Bar'){
+let hasil = fs.readFileSync('mp3/' + 'baka' + '.wav')
+ conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
+}
+else if (text == 'Ptt'){
+let hasil = fs.readFileSync('mp3/' + 'pttt' + '.pttt')
+ conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
+}
+else if (text == 'goblok'){
+let hasil = fs.readFileSync('mp3/' + 'goblok' + '.wav')
+ conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
+}
 else if (text == 'Akbar'){
 let hasil = fs.readFileSync('mp3/' + 'baka' + '.wav')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
