@@ -2028,6 +2028,14 @@ var porn = text.split(".pornhub ")[1];
         })
     })
 }
+if (text.includes('.fakename')) {
+const teks = text.replace(/.fakename /, "")
+axios.get(`https://xptnbotapi.herokuapp.com/api/v1/fakename?country=${teks}`).then((res) => {
+	conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
+    let hasil = ` \n  name : ${res.data.name} \n birthday : ${res.data.birthday} \n adress : ${res.data.adress} \n phone_number : ${res.data.phone_number} \n username : ${res.data.username} \n password : ${res.data.password}`;
+    conn.sendMessage(id, hasil ,MessageType.text);
+})
+}
 if (text.includes(".ytmp4")){
 const teks = text.replace(/.ytmp4 /, "")
 axios.get(`https://st4rz.herokuapp.com/api/ytv2?url=${teks}`).then((res) => {
