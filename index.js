@@ -94,7 +94,10 @@ conn.on('message-status-update', json =>
 
 conn.on('message-new', async(m) =>
 {
-   const messageContent = m.message
+   var owner = '6282198571732@s.whatsapp.net'
+   var isAdmin = m.participant === owner
+   var admin = '6282198571732@s.whatsapp.net'
+   var isBotAdmin = m.participant === admin   const messageContent = m.message
    const text = m.message.conversation
    let id = m.key.remoteJid
    const messageType = Object.keys(messageContent)[0] // message will always contain one key signifying what kind of message
@@ -1748,6 +1751,22 @@ axios.get(`https://api.banghasan.com/domain/hostsearch/${teks}`).then((res) => {
     conn.sendMessage(id, hasil ,MessageType.text);
   })
  }
+if (text.includes('.hidetag')){
+var value = text.replace(text.split(' ')[0], '')
+var group = await conn.groupMetadata(id)
+var member = group['participants']
+var ids = []
+member.map( async adm => {
+    ids.push(adm.id.replace('c.us', 's.whatsapp.net'))
+})
+var options = {
+    text: value,
+    contextInfo: { mentionedJid: ids },
+    quoted: m
+}
+if (!isAdmin) conn.sendMessage(id, 'Ini Cuma Untuk Owner! Awokawok', MessageType.text, { quoted: m })
+else conn.sendMessage(id, options, MessageType.text)
+}
 if (text.includes('.text3d')){
   var teks = text.replace(/.text3d /, '')
     axios.get('http://jojo-api-doc.herokuapp.com/api/text3d?text={text}')
@@ -1961,6 +1980,55 @@ axios.get(`https://st4rz.herokuapp.com/api/yta2?url=${teks}`).then((res) => {
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
+if (text.includes('.apakah')){
+const teks = text.replace(/./, '')
+const truth =[
+'Iya',
+'Tidak',
+'Bisa Jadi',
+'Coba Ulangi']
+const ttrth = truth[Math.floor(Math.random() * truth.length)]
+conn.sendMessage(id, 'Pertanyaan : *'+teks+'*\n\nJawaban : '+ ttrth, MessageType.text, { quoted: m })
+}
+if (text.includes('.bisakah')){                                                                                                                                    if (text.includes('.bisakah')){
+const teks = text.replace(/./, '')
+const truth =[
+'Bisa',
+'Tidak Bisa',
+'Coba Ulangi']
+const ttrth = truth[Math.floor(Math.random() * truth.length)]
+conn.sendMessage(id, 'Pertanyaan : *'+teks+'*\n\nJawaban : '+ ttrth, MessageType.text, { quoted: m })
+}
+
+if (text.includes('.kapankah')){
+const teks = text.replace(/./, '')
+const truth =[
+'Besok',
+'Lusa',
+'Tadi',
+'4 Hari Lagi',
+'5 Hari Lagi',
+'6 Hari Lagi',
+'1 Minggu Lagi',
+'2 Minggu Lagi',
+'3 Minggu Lagi',
+'1 Bulan Lagi',
+'2 Bulan Lagi',
+'3 Bulan Lagi',
+'4 Bulan Lagi',
+'5 Bulan Lagi',
+'6 Bulan Lagi',
+'1 Tahun Lagi',
+'2 Tahun Lagi',
+'3 Tahun Lagi',
+'4 Tahun Lagi',
+'5 Tahun Lagi',
+'6 Tahun Lagi',
+'1 Abad lagi',
+'3 Hari Lagi']
+const ttrth = truth[Math.floor(Math.random() * truth.length)]
+conn.sendMessage(id, 'Pertanyaan : *'+teks+'*\n\nJawaban : '+ ttrth, MessageType.text, { quoted: m })
+}
 if (text.includes('/igstalk')){
   var teks = text.replace(/.igstalk /, '')
     axios.get('https://arugaz.herokuapp.com/api/stalk?username='+teks)
@@ -2002,6 +2070,52 @@ axios.get(`https://mhankbarbar.herokuapp.com/api/nekopoi?url=${teks}&apiKey=N2Ws
     let hasil = `➸ *nekopoi link tersedia* : ${res.data.judul}\n*result* : ${res.data.result} \n*dilihat* : ${res.data.dilihat}\n*tumbnail* : ${res.data.tumbnail}` 
     conn.sendMessage(id, hasil, MessageType.text); 
 })
+}
+if (text == '.dare'){
+      imageToBase64('https://i.ibb.co/Y8VhLsB/Bot-20201216-065810.jpg')
+        .then(
+          (ress) => {
+            const dare = [
+        'makan 2 sendok nasi tanpa lauk apapun, kalo seret boleh minum',
+        'spill orang yang bikin kamu jedag jedug',
+        'telfon crush/pacar sekarang dan ss ke pemain',
+        'drop emot "🦄💨" setiap ngetik di gc/pc selama 1 hari.',
+        'ucapin kata "Selamat datang di Who Wants To Be a Millionaire!" ke semua grup yang kamu punya',
+        'marah² ga jelas ke penonton sw kamu urutan 30',
+        'telfon mantan bilang kangen',
+        'yanyiin reff lagu yang terakhir kamu setel',
+        'vn mantan/crush/pacar kamu, bilang hi (namanya), mau telfon dong, bentar ajaa. aku kangen🥺👉🏼👈🏼"',
+        'kletekan di meja (yg ada dirumah) sampe lo dimarahin karena berisik',
+        'belanjain (grab/gofood) buat salah satu pemain disini, terserah siapa. budget dibawah 25k',
+        'Bilang ke random people  "Aku baru saja diberi tahu aku adalah kembaranmu dulu, kita dipisahkan, lalu aku menjalani operasi plastik. Dan ini adalah hal paling ciyussss "',
+        'sebutin nama nama mantan',
+        'buatin 1 pantun untuk pemain pertama!',
+        'ss chat wa',
+        'chat random people dengan bahasa alay lalu ss kesini',
+        'ceritain hal memalukan versi diri sendiri',
+        'tag orang yang dibenci',
+        'Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll.',
+        'ganti nama jadi " BOWO " selama 24 jam',
+        'teriak " anjimm gabutt anjimmm " di depan rumah mu',
+        'snap/post foto pacar/crush',
+        'sebutkan tipe pacar mu!',
+        'bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini',
+        'record voice baca surah al-kautsar',
+        'prank chat mantan dan bilang " i love u, pgn balikan. " Tanpa ada kata dare!',
+        'chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you!"',
+        'ganti nama menjadi "gue anak lucinta luna" selama 5 jam',
+        'ketik pake bahasa sunda 24 jam',
+        'pake foto sule sampe 3 hari',
+        'drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu',
+        'kirim voice note bilang can i call u baby?',
+        'ss recent call whatsapp',
+        'Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo!',
+        'pap ke salah satu anggota grup'
+    ]
+         const ddare = dare[Math.floor(Math.random() * (dare.length))]
+            var buf = Buffer.from(ress, 'base64')
+            conn.sendMessage(id, buf, MessageType.image, { caption: ddare, quoted: m })
+        })
 }
 if (text.includes('.memecreate')){
   var teks = text.replace(/.memecreate /, '')
