@@ -1418,7 +1418,7 @@ else if (text == '.tools1'){
 conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾XP-TNNBOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/@mragung23' ,MessageType.text);
 }
 else if (text == '.menu'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾XP-TNNBOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/@mragung23' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️*.help ngab, Bukan .menu* , Follow Instagram Mimin Yah😻 : https://instagram.com/barxnl' ,MessageType.text);
 }
 else if (text == '.tool2'){
 conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾XP-TNNBOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/@mragung23' ,MessageType.text);
@@ -2092,7 +2092,7 @@ if (text.includes('.ytmp3')){
         })
     })
 }
-if (text.includes('/igstalk')){
+if (text.includes('.igstalk')){
   var teks = text.replace(/.igstalk /, '')
     axios.get('https://arugaz.herokuapp.com/api/stalk?username='+teks)
     .then((res) => {
@@ -2105,7 +2105,7 @@ if (text.includes('/igstalk')){
         })
     })
 }
-if (text.includes('>infogempa')){
+if (text.includes('.infogempa')){
     axios.get(`https://st4rz.herokuapp.com/api/infogempa`).then((res) => {
       imageToBase64(res.data.map)
         .then(
