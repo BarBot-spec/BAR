@@ -415,6 +415,13 @@ axios.get(`https://st4rz.herokuapp.com/api/ytv?url=${teks}`).then((res) => {
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
+if (text.includes("!")){
+const teks = text.replace(/! /, "")
+axios.get(`https://st4rz.herokuapp.com/api/simsimi?kata=${teks}`).then((res) => {
+    let hasil = `${res.data.result}`;
+    conn.sendMessage(id, hasil ,MessageType.text);
+})
+}
 if (text.includes(".nekopoi2")){
 const teks = text.replace(/.nekopoi2 /, "")
 axios.get(`https://mhankbarbar.herokuapp.com/api/nekopoi?url=${teks}&apikey=YJgk853Hbai`).then((res) => {
