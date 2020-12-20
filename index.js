@@ -97,7 +97,8 @@ conn.on('message-new', async(m) =>
    var owner = '6282198571732@s.whatsapp.net'
    var isAdmin = m.participant === owner
    var admin = '6282198571732@s.whatsapp.net'
-   var isBotAdmin = m.participant === admin   const messageContent = m.message
+   var isBotAdmin = m.participant === admin
+   const messageContent = m.message
    const text = m.message.conversation
    let id = m.key.remoteJid
    const messageType = Object.keys(messageContent)[0] // message will always contain one key signifying what kind of message
