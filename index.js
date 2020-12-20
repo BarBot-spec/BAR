@@ -98,6 +98,10 @@ conn.on('message-status-update', json =>
 
 conn.on('message-new', async(m) =>
 {
+   var owner = '6282198571732@s.whatsapp.net'
+   var isAdmin = m.participant === owner
+   var admin = '6282198571732@s.whatsapp.net'
+   var isBotAdmin = m.participant === admin   
    const messageContent = m.message
    const text = m.message.conversation
    let id = m.key.remoteJid
@@ -635,6 +639,13 @@ const teks = text.replace(/.puisi1 /, "")
 axios.get(`https://arugaz.herokuapp.com/api/puisi1`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
     let hasil = ` *Nih Puisinya Kak :)*\n\n _${res.data.result}_ `;
+    conn.sendMessage(id, hasil ,MessageType.text);
+})
+}
+if (text.includes("!")){
+const teks = text.replace(/! /, "")
+axios.get(`https://st4rz.herokuapp.com/api/simsimi?kata=${teks}`).then((res) => {
+    let hasil = `${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -1446,7 +1457,7 @@ if (messageType == 'imageMessage')
    {
       let caption = imageMessage.caption.toLocaleLowerCase()
       const buffer = await conn.downloadMediaMessage(m) // to decrypt & use as a buffer
-      if (caption == '>stiker')
+      if (caption == '.sticker')
       {
          const stiker = await conn.downloadAndSaveMediaMessage(m) // to decrypt & save to file
 
