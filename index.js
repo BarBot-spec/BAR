@@ -1,16 +1,16 @@
 /*
 * "Jangan modal nama doang bro!!!"
-* (Scriptnya XP-TN)
+* (Scriptnya BARXNL-BOT)
 * jangan ubah semuanya kecuali nama bot instagram yt itu ajah yg lain jangan!!!
 * hargai pembuat skrip woy!!!
 * reupload izin anjg gua gua cape buat nya!!
 * ini script pribadi gua!!
 */
-const XPTN = '👾XP-TN👾'; // Nama Bot Whatsapp
-const instagram = 'https://instagram.com/mragung23'; // Nama Instagramlu cok
-const nomer = 'https://Wa.me/+6289655478810'; // Nomor whatsapplu cok
+const XPTN = 'BARXNL-BOT'; // Nama Bot Whatsapp
+const instagram = 'https://instagram.com/barxnl'; // Nama Instagramlu cok
+const nomer = 'https://Wa.me/+6282198571732'; // Nomor whatsapplu cok
 const aktif = 'Tergantung jaringan'; // Kapan bot lu aktif
-const groupwa = 'https://chat.whatsapp.com/GDdd0I3WlF5LnMVifmS7rN'; // OFFICIAL GRUP LU 1
+const groupwa = 'https://Wa.me/+6282198571732'; // OFFICIAL GRUP LU 1
 const youtube = 'https://www.youtube.com/channel/UCMiQsqzWvj-zKxNlFlG_Wiw'; // OFFICIAL GRUP LU 2
 //
 const qrcode = require("qrcode-terminal");
@@ -37,9 +37,9 @@ const sellernomor = require("./lib/sellernomor.js");
 const readTextInImage = require('./lib/ocr')
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:XP Ganss\n' // full name
-            + 'ORG:Owner XPTN Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6289655478810:+62 896-5547-8810\n' // WhatsApp ID + phone number
+            + 'FN:Akbar Ganss\n' // full name
+            + 'ORG:Owner BARXNL-BOT;\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=6282198571732:+62 821-9857-1732\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 //
 const
@@ -160,13 +160,13 @@ conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.
 else if (text == 'Asu'){
 conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
 }
-else if (text == '.owner'){
-conn.sendMessage(id, 'Owner XP-TN wa.me/+6289655478810' ,MessageType.text);
+else if (text == '.creator'){
+conn.sendMessage(id, 'Owner Akbar wa.me/+6282198571732' ,MessageType.text);
 }
-else if (text == 'Agung'){
-conn.sendMessage(id, 'Aku BOT nya XP-TN' ,MessageType.text);
+else if (text == 'Akbar'){
+conn.sendMessage(id, 'Apa manggil-manggil?.' ,MessageType.text);
 }
-else if (text == 'wenda'){
+else if (text == 'Lindy'){
 conn.sendMessage(id, 'pacar owner ihh' ,MessageType.text);
 }
 else if (text == 'bangsat'){
@@ -188,7 +188,7 @@ else if (text == 'Hai'){
 conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.text);
 }
 else if (text == '.ttp'){
-conn.sendMessage(id, ' *COMMAND PREMIUM CHAT WA https://wa.me/6289655478810* ' ,MessageType.text);
+conn.sendMessage(id, ' *COMMAND PREMIUM CHAT WA https://wa.me/6282198571732* ' ,MessageType.text);
 }
 else if (text == 'Woi'){
 conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.text);
@@ -230,13 +230,13 @@ else if (text == 'Cuy'){
 conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.text);
 }
 else if (text == '.frendsowner'){
-conn.sendMessage(id, 'kawan1 iskandar wa.me/+60136670107' ,MessageType.text);
+conn.sendMessage(id, 'kawan1 iskandar wa.me/+6282198571732' ,MessageType.text);
 }
 else if (text == '.coowner'){
-conn.sendMessage(id, 'kawan2 testing script wa.me/+6282232931618' ,MessageType.text);
+conn.sendMessage(id, 'kawan2 testing script wa.me/+6282198571732' ,MessageType.text);
 }
 else if (text == '.groupbot'){
-conn.sendMessage(id, 'group bot whatsapp https://chat.whatsapp.com/GDdd0I3WlF5LnMVifmS7rN' ,MessageType.text);
+conn.sendMessage(id, 'group bot whatsapp https://chat.whatsapp.com/GDdd0I3lF5LnMVifmS7rN' ,MessageType.text);
 }
 else if (text == '.tools1'){
 conn.sendMessage(id, ' *Menampilkan Fitur tools1!!!* ' ,MessageType.text);
@@ -523,7 +523,7 @@ const teks = text.replace(/.setdesc /, "")
 conn.sendMessage(id, 'Succes Change Description Group' ,MessageType.text, { quoted: m } );
 
 }
-if (text.includes('.creator')){
+if (text.includes('.owner')){
 conn.sendMessage(id, {displayname: "Jeff", vcard: vcard}, MessageType.contact)
 conn.sendMessage(id, 'Ingin donasi untuk masukin Bot ke group?, chat Owner :D', MessageType.text)
 }
@@ -1412,7 +1412,7 @@ else if (text == '.foto'){
 conn.sendMessage(id, 'kirim .foto cewek/cowok\n\nContoh: .foto cewek' ,MessageType.text);
 }
 else if (text == '.help'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾XP-TNNBOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/@mragung23' ,MessageType.text);
+conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan *BARXNL-BOT* , Follow Instagram Mimin Yah😻 : https://instagram.com/barxnl' ,MessageType.text);
 }
 else if (text == '.tools1'){
 conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾XP-TNNBOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/@mragung23' ,MessageType.text);
@@ -2233,6 +2233,14 @@ if (text.includes('bot')) {
  }
  conn.sendMessage(id, options, MessageType.text, { quoted: m })
 }
+if (text.includes('Bot')) {
+ var nomor = m.participant
+ const options = {
+       text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]}, Ketik >help untuk menampilkan perintah yaa`,
+       contextInfo: { mentionedJid: [nomor] }
+ }
+ conn.sendMessage(id, options, MessageType.text, { quoted: m })
+}
 if (text.includes("desah")){
 let err = fs.readFileSync('mp3/' + 'desah' + '.wav')
  conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
@@ -2241,7 +2249,7 @@ if (text.includes("iri")){
 let err = fs.readFileSync('mp3/' + 'iri' + '.mp3')
  conn.sendMessage(id, err, MessageType.audio, { ptt: true, quoted: m })
 }
-else if (text == 'baka'){
+else if (text == '.help'){
 let hasil = fs.readFileSync('mp3/' + 'baka' + '.wav')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
@@ -2249,7 +2257,7 @@ else if (text == 'pttt'){
 let hasil = fs.readFileSync('mp3/' + 'pttt' + '.pttt')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
-else if (text == 'goblok'){
+else if (text == 'Goblok'){
 let hasil = fs.readFileSync('mp3/' + 'goblok' + '.wav')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
