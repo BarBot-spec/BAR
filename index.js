@@ -74,7 +74,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] XP-TN Ready scan now!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] BARXNL-BOT Ready scan now!`);
 });
 
 conn.on('credentials-updated', () =>
@@ -89,11 +89,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mragung23`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @barxnl`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mragung23`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @barxnl`)
 })
 
 conn.on('message-new', async(m) =>
@@ -230,7 +230,7 @@ else if (text == 'Cuy'){
 conn.sendMessage(id, 'Ya?, Ketik .help/.info/.donasi Contoh .help' ,MessageType.text);
 }
 else if (text == '.frendsowner'){
-conn.sendMessage(id, 'kawan1 iskandar wa.me/+6282198571732' ,MessageType.text);
+conn.sendMessage(id, 'kawan1  wa.me/+6282198571732' ,MessageType.text);
 }
 else if (text == '.coowner'){
 conn.sendMessage(id, 'kawan2 testing script wa.me/+6282198571732' ,MessageType.text);
@@ -2228,7 +2228,7 @@ let err = fs.readFileSync('mp3/' + 'tariksis' + '.wav')
 if (text.includes('bot')) {
  var nomor = m.participant
  const options = {
-       text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]}, Ketik >help untuk menampilkan perintah yaa`,
+       text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]}`,
        contextInfo: { mentionedJid: [nomor] }
  }
  conn.sendMessage(id, options, MessageType.text, { quoted: m })
@@ -2236,7 +2236,7 @@ if (text.includes('bot')) {
 if (text.includes('Bot')) {
  var nomor = m.participant
  const options = {
-       text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]}, Ketik >help untuk menampilkan perintah yaa`,
+       text: `apa manggil manggil tinggal ketik .help @${nomor.split("@s.whatsapp.net")[0]}`,
        contextInfo: { mentionedJid: [nomor] }
  }
  conn.sendMessage(id, options, MessageType.text, { quoted: m })
@@ -2253,7 +2253,11 @@ else if (text == '.help'){
 let hasil = fs.readFileSync('mp3/' + 'baka' + '.wav')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
-else if (text == 'pttt'){
+else if (text == '.Bot'){
+let hasil = fs.readFileSync('mp3/' + 'baka' + '.wav')
+ conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
+}
+else if (text == 'Ptt'){
 let hasil = fs.readFileSync('mp3/' + 'pttt' + '.pttt')
  conn.sendMessage(id, hasil, MessageType.audio, { quoted: m } )
 }
