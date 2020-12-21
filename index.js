@@ -312,7 +312,7 @@ if (text.includes('~tts2')){
           (ress) => {
             conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
             let hasil = hasil.from(ress, 'base64')
-            conn.sendMessage(from, hasil, MessageType.audio, {ptt: true})
+            conn.sendMessage(from, , MessageType.audio, {ptt: true})
         })
     })
 }
@@ -681,7 +681,7 @@ conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
-if (text.includes(".quotes1")){
+if (text.includes(".quotes")){
 const teks = text.replace(/.quotes1 /, "")
 axios.get(`https://arugaz.herokuapp.com/api/randomquotes`).then((res) => {
 conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
