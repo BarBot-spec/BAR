@@ -312,7 +312,7 @@ if (text.includes('~tts2')){
           (ress) => {
             conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
             let hasil = hasil.from(ress, 'base64')
-            conn.sendMessage(from, , MessageType.audio, {ptt: true})
+            conn.sendMessage(from, buff, MessageType.audio, {ptt: true})
         })
     })
 }
