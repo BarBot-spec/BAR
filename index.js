@@ -642,7 +642,7 @@ conn.sendMessage(id, '[WAIT] Searching...❗', MessageType.text)
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
-if (text.includes("!")){
+if (text.includes("/s")){
 const teks = text.replace(/! /, "")
 axios.get(`https://st4rz.herokuapp.com/api/simsimi?kata=${teks}`).then((res) => {
     let hasil = `${res.data.result}`;
@@ -1447,8 +1447,29 @@ conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾XP-TNNBOT👾* 
 else if (text == '.tools4'){
 conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾XP-TNNBOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/@mragung23' ,MessageType.text);
 }
-else if (text == '.tools5'){
-conn.sendMessage(id, ' _🗣️Thanks Telah Menggunakan BOT *👾XP-TNNBOT👾* , Follow Instagram Mimin Yah😻 : https://instagram.com/@mragung23' ,MessageType.text);
+if (messageType == 'imageMessage')
+   {
+      let caption = imageMessage.caption.toLocaleLowerCase()
+      const buffer = await conn.downloadMediaMessage(m) // to decrypt & use as a buffer
+      if (caption == '.s')
+      {
+         const stiker = await conn.downloadAndSaveMediaMessage(m) // to decrypt & save to file
+
+         const
+         {
+            exec
+         } = require("child_process");
+         exec('cwebp -q 50 ' + stiker + ' -o temp/' + jam + '.webp', (error, stdout, stderr) =>
+         {
+            let stik = fs.readFileSync('temp/' + jam + '.webp')
+            conn.sendMessage(id, stik, MessageType.sticker, { quoted: m })
+         });
+      }
+   }
+
+   if (messageType === MessageType.text)
+   {
+      let is = m.message.conversation.toLocaleLowerCase()
 }
 if (messageType == 'imageMessage')
    {
@@ -1525,7 +1546,7 @@ const get = require('got')
     console.log(body[0]['name'])
     conn.sendMessage(id,`🔎DATA WABAH COVID-19 TERBARU DI INDONESIA🔍\n\n📈Positif ==> ${positif} \n📉Sembuh ==> ${sembuh} \n📋Meninggal ==> ${meninggal}\n🗒️Dirawat ==> ${dirawat}`, MessageType.text);
 }
-   if (text.includes(".quotes"))
+   if (text.includes(".katabijak"))
    {
       var url = 'https://jagokata.com/kata-bijak/acak.html'
       axios.get(url)
